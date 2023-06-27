@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body,
+html {
+    height: 100%;
+    background-color: rgb(29, 23, 23);
+}
+  
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(assets/font/Inter-Bold.ttf);
+}
+  
+@font-face {
+    font-family: "Inter-Medium";
+    src: url(assets/font/Inter-Medium.ttf);
+}
+:root {
+    --background-color: #422308;
+    --text-color: #f0d1a0;
+    --hover-color: #eec07b;
+    --footer-color: #6d3200;
+}
+  
+  /* start of navigation */
+.nav{
+    position: sticky;
+    background: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+  
+  
+.nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Inter-Medium";
+    font-size: 1.5rem;
+}
+.burger-dropdown {
+    display: none;
+}
+.burger-menu svg {
+    display: none;
+}
+  
+.nav-container a:hover {
+    color: var(--hover-color);
+    font-family: "Inter-Medium";
+}
+/* end of navigation */
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter-Bold','Times New Roman', Times, serif;
+    margin: 4rem;
+    font-size: 2rem;
+    color:var(--text-color);
+    align-items: center;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+img,video{
+  margin:2rem;
+  padding: 1rem;
+  width: 300px; 
+  height: 500px;
+  object-fit: cover;
+  border-radius: 2rem;
+  
+}
+@media screen and (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    .burger-menu{
+        background: var(--background-color);
+        padding: 1.5rem;
+    }
+    .burger-menu a{
+        display: flex;
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: 'Inter-Bold';
+        justify-content: center;
+        padding: 2rem;
+        font-size: 1.25rem;
+    }
+
+    .burger-dropdown{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        right: -100%;
+        display: none;
+        cursor: pointer;
+        fill: var(--text-color);
+        background: var(--background-color);
+    }
+    
+    .burger-menu svg {
+        display: flex;
+        margin-left: auto;
+        cursor: pointer;
+        fill: var(--text-color);
+        
+    }
+    
+    .burger-dropdown.active {
+        right: 0%;
+        display: block;
+    }
+    .burger-dropdown a:hover {
+        color: var(--hover-color);
+    }
+    img,video{
+        margin:2rem;
+        padding: 1rem;
+        width: 300px; 
+        height: 500px;
+        object-fit: cover;
+        border-radius: 2rem;
+        
+      }
+    
+}
