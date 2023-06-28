@@ -38,7 +38,7 @@ html {
 
 
 .nav a {
-  padding: 2rem;
+  padding: 1rem;
   text-decoration: none;
   color: var(--text-color);
   font-family: "Inter-Medium";
@@ -89,7 +89,7 @@ html {
   width: 40%;
   justify-self: end;
   padding: 4rem;
-  font-family: "Inter-Medium";
+  font-family: 'Inter-Medium',monospace, Courier;
 }
 .intro img {
   display: none;
@@ -104,13 +104,13 @@ html {
 
 .call-to-action h2 {
   margin-top: 5rem;
-  font-family: "Inter-Bold";
+  font-family: 'Inter-Bold',monospace, Courier;
   font-size: 3rem;
 }
 
 .call-to-action button {
   margin-top: 2rem;
-  font-family: "Inter-Medium";
+  font-family: 'Inter-Medium',monospace, Courier;
   padding: 1rem;
   font-size: 2rem;
   background: var(--background-color);

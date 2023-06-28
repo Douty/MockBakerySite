@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body,
+html {
+    height: 100%;
+}
+  
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(assets/font/Inter-Bold.ttf);
+}
+  
+@font-face {
+    font-family: "Inter-Medium";
+    src: url(assets/font/Inter-Medium.ttf);
+}
+  
+:root {
+    --background-color: #422308;
+    --text-color: #f0d1a0;
+    --hover-color: #eec07b;
+    --footer-color: #6d3200;
+}
+  
+/* start of navigation */
+.nav{
+    position: sticky;
+    background: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+  
+  
+.nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Inter-Medium";
+    font-size: 1.5rem;
+}
+.burger-dropdown {
+    display: none;
+}
+.burger-menu svg {
+    display: none;
+}
+  
+.nav-container a:hover {
+    color: var(--hover-color);
+    font-family: 'Inter-Medium',monospace, Courier;
+}
+/* end of navigation */
+.greeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+    font-size: 2rem;
+}
+.greeting h1{
+    font-family: 'Inter-Bold',monospace, Courier;
+}
+.greeting h3{
+    font-family: 'Inter-Medium',monospace, Courier;
+}
+
+.cart{
+    display: flex;
+}
+/* start of card menu */
+.cart{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: gray;
+}
+
+.card-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    max-width: 500px;
+    font-family: 'Inter-Bold',monospace, Courier;
+    
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+.card img{
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+}
+.container{
+    padding: 1rem;
+}
+.container h2,.container p,.container h6,.container button{
+    margin: 1rem;
+}
+.container button{
+    padding: 10px;
+    font-family: 'Inter-Medium',monospace, Courier;
+    background-color: var(--background-color);
+    color:var(--text-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
