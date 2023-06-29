@@ -100,11 +100,15 @@ function product_list(btnID){
 function subtractItem(item) {
   let card = document.getElementById(item.name);
   let quant_text = card.querySelector('h6');
-  item.quantity--; 
+  if (item.quantity > 0){
+    item.quantity--; 
+  }
   quant_text.textContent = `Quantity: ${item.quantity}`;
 
   let cart_list = document.querySelector('.checkout h1');
-  totalCart -= item.price; 
+  if (totalCart > 0){
+    totalCart -= item.price;
+  }
   cart_list.textContent = `Total: $${totalCart.toFixed(2)}`;
 }
 
