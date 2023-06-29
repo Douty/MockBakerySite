@@ -30,80 +30,92 @@
 </body>
     <main>
         <section>
-            
-            
             <div class="greeting">
                 <h1>Menu</h1>
-                <h3>Although we focus on bread, our diverse team members are also skilled at pastries!</h3>
+                <p>Although we focus on bread, our diverse team members are also skilled at pastries!</p>
             </div>
             
             <div class="card-container">
-                <div id="Marcoons" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/macaroons.jpg"/>
-                    <div class="container">
+                    <div id='Macaroons'class="container">
                         <h2>Macaroons</h2>
                         <p>$2.75</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="macaroons_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
-                <div id="Guava" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/guava.jpg"/>
-                    <div class="container">
+                    <div id='Guava' class="container">
                         <h2>Guava</h2>
                         <p>$3.50</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="guava_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
-                <div id="cinnamon-bun" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/cinnamon-bun.jpg"/>
-                    <div class="container">
+                    <div id='Cinnamon Bun' class="container">
                         <h2>Cinnamon Bun</h2>
                         <p>$3.50</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="cinnamon_bun_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
-                <div id="churros" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/churros.jpg"/>
-                    <div class="container">
+                    <div id='Churros' class="container">
                         <h2>Churros</h2>
                         <p>$1.75</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="churros_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
-                <div id="baguette" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/baguette.jpg"/>
-                    <div class="container">
+                    <div id='Baguette'class="container">
                         <h2>Baguette</h2>
                         <p>$8.20</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="baguette_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
-                <div id="croissant" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/croissant.jpg"/>
-                    <div class="container">
+                    <div id='Croissant'class="container">
                         <h2>Croissant</h2>
                         <p>$4.35</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="croissant_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
-                <div id="sugar-coated-donuts" class="card">
+                <div class="card">
                     <img src="assets/img/menu-items/sugar-coated-donuts.jpg"/>
-                    <div class="container">
+                    <div id='Sugar Coated Donuts' class="container">
                         <h2>Sugar coated Donuts</h2>
                         <p>$3.65</p>
-                        <h6>Quantity: 1</h6>
-                        <button>Add to cart</button>
+                        <h6>Quantity: 0</h6>
+                        <button class='item-btn' id="sugar_coated_donuts_btn">Add to cart</button>
+                        <button id="remove" class="remove-btn">Remove</button>
                     </div>
                 </div>
             </div>
-            
+            <div class="checkout-container">
+                <div class="checkout">
+                    <h1>Total: </h1>
+                    <button>Check out</button>
+                </div>
+                
+            </div>
         </section>
+        <script src="menu.js"></script>
     </main>
     
 </main>
