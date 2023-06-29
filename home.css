@@ -64,6 +64,7 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(assets/img/bread2.jpg);
   background-size: 100vw 100vh;
+  object-fit: cover;
   background-repeat: no-repeat; 
   min-height: 80vh;
   color: var(--text-color);
@@ -410,12 +411,20 @@ html {
     align-items: center;
     justify-content: center;
   }
+  .intro h1{
+    font-size: 3rem;
+  }
+  .intro p{
+    font-size: 2rem;
+  }
 
   .intro h1,
   .intro p {
     text-align: center;
-    width: 90%;
+    width: 100%;
+    padding: 1rem;
     margin: 2rem;
+    
   }
 
   .intro img {
@@ -454,11 +463,13 @@ html {
     justify-content: center;
   }
   
-
+  .about-us p{
+    font-size: 1.3rem;
+  }
   .about-us h2,
   .about-us p {
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
   }
 
