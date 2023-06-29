@@ -2,13 +2,7 @@ const Hamburger = document.querySelector('.burger-menu svg');
 const navmenu = document.querySelector('.burger-dropdown');
 let totalCart = 0;
 
-const macaroons_btn = document.getElementById('macaroons_btn');
-const guava_btn = document.getElementById('guava_btn');
-const cinnamon_bun_btn = document.getElementById('cinnamon_bun_btn');
-const churros_btn = document.getElementById('churros_btn');
-const baguette_btn = document.getElementById('baguette_btn');
-const croissant_btn = document.getElementById('croissant_btn');
-const sugar_coated_donuts_btn = document.getElementById('sugar_coated_donuts_btn');
+
 
 let macaroons = {
   name: 'Macaroons',
@@ -60,6 +54,7 @@ const sugar_coated_donuts = {
 };
 
 const buttons = document.querySelectorAll('.item-btn');
+const remove_btns = document.querySelectorAll('.remove-btn');
 buttons.forEach((button) => {
     const btnID = button.id;
     button.addEventListener('click', () => {
@@ -67,19 +62,17 @@ buttons.forEach((button) => {
       addNewItem(itemID);
     });
 });
-
+remove_btns.forEach((button) => {
+  const btnID = button.id;
+  button.addEventListener('click', () => {
+    const itemID = product_list(btnID);
+    subtractItem(itemID)
+  });
+});
 
 Hamburger.addEventListener('click', () => {
   navmenu.classList.toggle('active');
 });
-
-
-
-
-
-
-
-
 
 
 function product_list(btnID){
